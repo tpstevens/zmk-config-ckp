@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 #define LAYER_VIM 2
+#define LAYER_FN  3
 
 / {
 	keymap {
@@ -23,7 +24,7 @@
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSLH
 				&mo 1 &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp RET
 				&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-				&kp LCTRL &kp LGUI &kp LALT &kp SPACE &kp RALT &kp RIGHT_GUI &kp RIGHT_CONTROL &mo 2
+				&kp LCTRL &kp LGUI &kp LALT &kp SPACE &kp RALT &kp RIGHT_GUI &kp RIGHT_CONTROL &mo LAYER_FN
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
@@ -32,7 +33,7 @@
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
 				&trans &trans &trans &trans &trans &trans &trans &trans &kp UP_ARROW &trans &trans &trans &trans &trans
 				&trans &kp HOME &kp END &kp LS(HOME) &kp LS(END) &trans &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &mo LAYER_FN
 				&trans &trans &trans &kp BACKSPACE &trans &trans &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -43,7 +44,7 @@
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSLH
 				&mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp RET
 				&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-				&kp ESC &kp LGUI &kp LALT &kp SPACE &kp RALT &kp RIGHT_GUI &kp RIGHT_CONTROL &mo 2
+				&kp ESC &kp LGUI &kp LALT &kp SPACE &kp RALT &kp RIGHT_GUI &kp RIGHT_CONTROL &mo LAYER_FN
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
