@@ -44,17 +44,17 @@
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSLH
 				&mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp RET
 				&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-				&kp ESC &kp LGUI &kp LALT &kp SPACE &kp RALT &kp RIGHT_GUI &kp RIGHT_CONTROL &mo LAYER_FN
+				&kp LCTRL &kp LGUI &kp LALT &kp SPACE &kp RALT &kp ESC &kp RIGHT_CONTROL &mo LAYER_FN
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		fn {
 			bindings = <
-				&tog LAYER_VIM &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
+				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
 				&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &bootloader &sys_reset &trans
 				&kp CAPSLOCK &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &kp C_PREV &kp C_NEXT &kp C_PP &kp UP_ARROW &trans 
-				&trans &trans &trans &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans
+				&trans &trans &trans &tog LAYER_VIM &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
