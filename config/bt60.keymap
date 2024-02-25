@@ -31,10 +31,10 @@
 		caps {
 			bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
-				&trans &trans &trans &trans &trans &trans &trans &trans &kp UP_ARROW &trans &trans &trans &trans &trans
-				&trans &kp HOME &kp END &kp LS(HOME) &kp LS(END) &trans &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&trans &kp HOME &kp END &kp LS(HOME) &kp LS(END) &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &mo LAYER_FN
-				&trans &trans &trans &kp BACKSPACE &trans &trans &trans &trans
+				&trans &trans &trans &kp ESC &trans &trans &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
